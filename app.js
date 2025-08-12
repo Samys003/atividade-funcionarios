@@ -2,11 +2,13 @@
 
 import funcionarios from "./funcionarios/funcionarios.json" with {type: json}
 
+
 function criarImagem (srcImagens){
+    
     const galeria = document.getElementById('galeria')
     const imagem = document.createElement('img')
     
-    imagem.scr = srcImagens.imagem
+    imagem = srcImagens.imagem
 
     galeria.appendChild(imagem)
 }
